@@ -1,1 +1,1 @@
-# Get-Multipe-jokes-With-AJAX
+# Get-Multiple-jokes-With-AJAX

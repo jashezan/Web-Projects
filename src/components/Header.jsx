@@ -26,7 +26,7 @@ const Header = () => {
                 aria-current="page"
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://github.com/jashezan/Biodata-Assignment-1"
+                href="https://github.com/jashezan/Counter-App-Assignment-2"
               >
                 Home
               </a>
@@ -34,7 +34,7 @@ const Header = () => {
             <li className="nav-item">
               <a
                 className="nav-link active"
-                href="https://github.com/jashezan/Biodata-Assignment-1"
+                href="https://github.com/jashezan/Counter-App-Assignment-2"
                 target="_blank"
                 rel="noreferrer noopener"
                 style={{ position: "absolute", right: "10px" }}

@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  margin: 0 auto;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  border-top: 1px dotted #666;
+}
+
+.todo-grp{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-grp{
+  min-width: 25%;
+  width: 30%;
+}
+
+.todo-grp span{
+  width: 90%;
+  word-wrap: break-word;
+}
+
+#check {
+  min-width: 10%;
+  position: relative;
+  right: 0;
+  zoom: 1.5;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 6px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 85%;
+  margin: 0 1rem;
+}
+
+.button-success {
+  background: rgb(28, 184, 65);
+  /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60);
+  /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20);
+  /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221);
+  /* this is a light blue */
+}

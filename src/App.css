@@ -1,8 +1,19 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.full {
+  position: relative;
+  min-height: 84vh;
+}
+
 .App {
   text-align: center;
 }
 
-.container{
+.container {
   max-width: 80%;
   margin: 0 auto;
 }
@@ -11,7 +22,7 @@ ul {
   list-style-type: none;
 }
 
-li{
+li {
   margin: 0 auto;
   max-width: 80%;
   margin-bottom: 1rem;
@@ -21,18 +32,18 @@ li{
   border-top: 1px dotted #666;
 }
 
-.todo-grp{
+.todo-grp {
   width: 70%;
   display: flex;
   justify-content: space-around;
 }
 
-.btn-grp{
+.btn-grp {
   min-width: 25%;
   width: 30%;
 }
 
-.todo-grp span{
+.todo-grp span {
   width: 90%;
   word-wrap: break-word;
 }
@@ -78,4 +89,47 @@ li{
 .button-secondary {
   background: rgb(66, 184, 221);
   /* this is a light blue */
+}
+
+.upper {
+  margin-bottom: 5rem;
+}
+
+.l-check {
+  /* text-decoration: line-through; */
+  color: #666;
+}
+
+.foot {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  min-height: 10vh;
+  background-color: rgb(33, 37, 41);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+
+}
+
+.value {
+  border: 2px solid black;
+  display: inline-block;
+  margin: 3.3rem auto;
+  padding: 2rem 5rem;
+}
+
+.flx {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half {
+  width: 50%;
+}
+
+main {
+  min-height: 100vh;
 }

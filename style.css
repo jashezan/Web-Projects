@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat&family=Lato&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.quote__box{
+  width: 80%;
+  min-height: 10vh;
+  height: 30vh;
+  border: 1px solid #ddd;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #ddd;
+  position: relative;
+}
+
+.quote__text{
+  font-family: 'Delius Swash Caps', cursive, sans-serif;
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quote__author{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem 1.6rem 2rem auto;
+}
+
+.quote__button{
+  border: none;
+  background-color: orangered;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}

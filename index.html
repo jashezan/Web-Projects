@@ -7,17 +7,25 @@
   
   <link rel="icon" href="https://icons.iconarchive.com/icons/elegantthemes/beautiful-flat-one-color/128/quote-icon.png" type="image/icon">
   
-  <link rel="stylesheet" href="style.css" type="text/stylesheet">
+  <!-- Font Awesome 6.0.0 -->
+  <!-- Use (fab -> Brands), (fas -> Solid) to use FA-6.0.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
   <title>Get Random Quotes</title>
 </head>
 <body>
   <h1 class="heading">Random Quote Generator</h1>
-  <section class="quote__box" id="box">
-    <div class="quote__text">" A house divided against itself cannot stand. "</div>
-    <div class="quote__author"> - &nbsp; Abraham Lincoln</div>
+  <section class="quote__box" data-aos="zoom-in">
+    <button class="tweet__btn" id="tbtn"><i class="fab fa-twitter" aria-hidden="true"></i></button>
+    <div class="quote__text" id="text"></div>
+    <div class="quote__author" id="author"></div>
   </section>
-  <button class="quote__button" type="submit">Get New Quotes</button>
+  <button class="quote__button" id="qbtn" >Get New Quotes</button>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Skeleton CSS is a small collection of CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://iconarchive.com/download/i108217/google/noto-emoji-smileys/10004-rolling-on-the-floor-laughing.ico" type="image/x-icon">
+    <title>Funny Jokes</title>
+
+    <!-- Internal CSS because its short -->
+    <style>
+        .main{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .joke{
+            list-style: none;
+            min-width: 100%;
+            height: auto;
+            background-color: #9AD0EC;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container main">
+        <h1>Get Funny Jokes With AJAX!</h1>
+        <input type="number" id="jno">
+        <button class="button-primary">Get jokes</button>
+        <div class="conatainer" id="output"></div>
+    </div>
+    <!-- javaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

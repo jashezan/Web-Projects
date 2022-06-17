@@ -1,5 +1,8 @@
+body{
+  background-color: rgba(0,0,0,0.9);
+}
+
 img{
-  height:180px;
   width:100%;
 }
 

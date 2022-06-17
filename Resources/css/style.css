@@ -1,5 +1,5 @@
 img{
-  height:150px;
+  height:180px;
   width:100%;
 }
 
@@ -58,3 +58,10 @@ div [class^="col-"]{
   transform: scale3d(1, 1, 1);
 }
 
+.bg-dark{
+  background-color: #111;
+}
+
+.nav-link:hover{
+  color: #00ff00;
+}

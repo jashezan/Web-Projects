@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/officel/16/000000/clock.png"
+      type="image/x-icon"
+    />
+
+    <!-- Style -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url("https://picsum.photos/id/120/1920/1080.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .clock {
+        width: 30rem;
+        height: 30rem;
+        border: 20px solid white;
+        border-radius: 50%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+          inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .clock-face {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .hand {
+        width: 50%;
+        background: #FFF;
+        position: absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        /* transform origin is 50% by default, but we need it from one horizon*/
+        /* rotating 90 deg to start all hand from 12 o'clock */
+        
+      }
+
+      .hour-hand{
+        height: 6px;
+        transition: all ease-in-out 1s;
+      }
+
+      .min-hand{
+        height: 5px;
+        transition: all ease-in-out 0.5s;
+      }
+
+      .sec-hand{
+        height: 4px;
+        transition: all ease-in-out 0.05s;
+      }
+
+      .message{
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: rgba(255, 255,255, 0.4);
+        padding: 1rem;
+      }
+    </style>
+
+    <!-- Page Title -->
+    <title>Clock</title>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand sec-hand"></div>
+      </div>
+    </div>
+
+    <div class="message">Made by Shezan</div>
+
+    <!-- Javascript -->
+    <script>
+      const secHand = document.querySelector(".sec-hand");
+      const minHand = document.querySelector(".min-hand");
+      const hourHand = document.querySelector(".hour-hand");
+
+      function setDate() {
+        // getting time
+        const now = new Date();
+
+        // extracting second
+        const second = now.getSeconds();
+        // changing sec-hand for every second by 6 degree also adding 90 deg because of previous act
+        const secDeg = (second / 60) * 360 + 90;
+        secHand.style.transform = `rotate(${secDeg}deg)`;
+
+        const min = now.getMinutes();
+        const minDeg = (min / 60) * 360 + 90;
+        minHand.style.transform = `rotate(${minDeg}deg)`;
+        
+        const hour = now.getHours();
+        const hourDeg = (hour / 12) * 360 + 90;
+        hourHand.style.transform = `rotate(${hourDeg}deg)`;
+        console.log(second)
+      }
+      setInterval(setDate, 1000);
+    </script>
+  </body>
+</html>

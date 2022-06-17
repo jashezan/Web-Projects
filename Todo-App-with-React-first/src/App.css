@@ -1,0 +1,135 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.full {
+  position: relative;
+  min-height: 84vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 0 auto;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  border-top: 1px dotted #666;
+}
+
+.todo-grp {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-grp {
+  min-width: 25%;
+  width: 30%;
+}
+
+.todo-grp span {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+#check {
+  min-width: 10%;
+  position: relative;
+  right: 0;
+  zoom: 1.5;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 6px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 85%;
+  margin: 0 1rem;
+}
+
+.button-success {
+  background: rgb(28, 184, 65);
+  /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60);
+  /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20);
+  /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221);
+  /* this is a light blue */
+}
+
+.upper {
+  margin-bottom: 5rem;
+}
+
+.l-check {
+  /* text-decoration: line-through; */
+  color: #666;
+}
+
+.foot {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  min-height: 10vh;
+  background-color: rgb(33, 37, 41);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+
+}
+
+.value {
+  border: 2px solid black;
+  display: inline-block;
+  margin: 3.3rem auto;
+  padding: 2rem 5rem;
+}
+
+.flx {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half {
+  width: 50%;
+}
+
+main {
+  min-height: 100vh;
+}

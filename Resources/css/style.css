@@ -7,10 +7,10 @@ a{
   text-decoration: none;
 }
 
-div [class^="col-"]{
+.project{
   padding-left:5px;
   padding-right:5px;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .card{
   transition:0.5s;
@@ -176,7 +176,7 @@ div [class^="col-"]{
 .social-icons a{
   background-color:#eceeef;
   color:#818a91;
-  font-size:16px;
+  font-size:1.6rem;
   display:inline-block;
   line-height:44px;
   width:44px;
@@ -200,21 +200,21 @@ div [class^="col-"]{
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+a.github:hover
 {
-  background-color:#3b5998
+  background-color:#000000
 }
-.social-icons a.twitter:hover
+a.twitter:hover
 {
   background-color:#00aced
 }
-.social-icons a.linkedin:hover
+a.linkedin:hover
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+a.hashnode:hover
 {
-  background-color:#ea4c89
+  background-color:#001df9
 }
 @media (max-width:767px)
 {

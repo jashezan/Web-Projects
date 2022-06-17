@@ -15,7 +15,9 @@
 
   <!-- Font Awesome 6.0.0 -->
   <!-- Use (fab -> Brands), (fas -> Solid) to use FA-6.0.0 -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" />
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -43,16 +45,39 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://jashezan.github.io" target="_blank"
-              rel="noopener noreferrer">Portfolio</a>
-          </li>
-        </ul>
+      <div class="d-flex justify-content-end">
+        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://jashezan.github.io" target="_blank"
+                rel="noopener noreferrer">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a target="_blank" rel="noreferrer noopener" class="nav-link github" href="https://github.com/jashezan"><i
+                  class="fab fa-github"></i></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noreferrer noopener" class="nav-link twitter"
+                href="https://twitter.com/jashezan"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noreferrer noopener" class="nav-link hashnode"
+                href="https://jashezan.hashnode.dev"><i class="fab fa-hashnode"></i></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noreferrer noopener" class="nav-link linkedin"
+                href="https://www.linkedin.com/in/m-m-jubyer-ahmed-shezan-0374421ba/"><i
+                  class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -60,163 +85,169 @@
   <div class="container my-5">
 
     <div class="row g-1">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://jashezan.github.io/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/jashezan-portfolio.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">J.A. Shezan's Porfolio</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/jashezan-portfolio.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">J.A. Shezan's Porfolio</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://icbatch4-shezan-a4.netlify.app/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/foodies-website.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Foodies Responsive Website</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/foodies-website.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Foodies Responsive Website</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/type-ahead-javascript30/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/modern-search-bar.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Modern Search Bar</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/type-ahead-javascript30/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/modern-search-bar.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Modern Search Bar</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://jashezan.github.io/Breaking-Bad-Cast/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/breaking-bad-cast.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Breaking Bad Cast</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">React JS, API</i></h4>
-        </div>
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/breaking-bad-cast.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Breaking Bad Cast</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">React JS, API</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/Random-Quote-Generator/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/random-quote.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Quote Generator</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/Random-Quote-Generator/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/random-quote.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Quote Generator</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/flex-panel-javascript30/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/flex-panel.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Flex Panel</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/flex-panel-javascript30/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/flex-panel.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Flex Panel</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://jashezan.github.io/Todo-App-with-React-first/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/react-todo-first.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Todo App 1 with React</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">React JS, API, BootStrap</i></h4>
-        </div>
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/react-todo-first.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Todo App 1 with React</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">React JS, API, BootStrap</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://shez4n.github.io/serialize-line/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/line-serializer.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Line Serializer Web Tool</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/line-serializer.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Line Serializer Web Tool</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/Update-CSS-Variables-and-JS-javascript30/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/update-css.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Update CSS variable with JavaScript</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/Update-CSS-Variables-and-JS-javascript30/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/update-css.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Update CSS variable with JavaScript</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/js-mini-project-sidebar/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/mini-sidebar.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Simple Sidebar</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/js-mini-project-sidebar/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/mini-sidebar.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Simple Sidebar</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://jashezan.github.io/Web-Projects/web-app-dice-game/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/dice-game-app.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Web App Dice Game</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/dice-game-app.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Web App Dice Game</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/drum-kit-javascript30/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/drum-kit.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Drum Kit Online</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/drum-kit-javascript30/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/drum-kit.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Drum Kit Online</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="https://jashezan.github.io/Web-Projects/Social-Media-CRUD-App-Basic/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/social-media-crud-app.png"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Social Media CRUD App</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+      <div class="col-md-3 col-sm-6 project">
+        <a href="https://jashezan.github.io/Web-Projects/Social-Media-CRUD-App-Basic/" target="_blank"
+          rel="noreferrer noopener">
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/social-media-crud-app.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Social Media CRUD App</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="https://jashezan.github.io/Web-Projects/clock-javascript30/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img
-            src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/clock-with-js.jpg"
-            alt="jashezan project">
-          <h5 class="card-title m-3">Clock With JavaScript</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">React JS, API</i></h4>
-        </div>
+          <div class="card card-block">
+            <img src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/clock-with-js.jpg"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Clock With JavaScript</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 project">
         <a href="/" target="_blank" rel="noreferrer noopener">
-        <div class="card card-block">
-          <img src=""
-            alt="jashezan project">
-          <h5 class="card-title m-3">Project Keeper</h5>
-          <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
-        </div>
+          <div class="card card-block">
+            <img
+              src="https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/projects/jashezan-projects-site.png"
+              alt="jashezan project">
+            <h5 class="card-title m-3">Project Keeper</h5>
+            <h4 class="card-title mx-3"><i class="material-icons">HTML, CSS, JS</i></h4>
+          </div>
         </a>
       </div>
     </div>
@@ -227,27 +258,29 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <p class="text-justify">Hi! My name is Shezan. I am a computer science and engineering student. I work in the
+            Web Development sector as a Full Stack Web Developer and the Cyber Security fields. Thank you for taking the
+            time to view my Porfolio works.</p>
         </div>
-  
+
         <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
+          <h6>Skills</h6>
           <ul class="footer-links">
-            <li><a href="/">C</a></li>
-            <li><a href="/"> Design</a></li>
-            <li><a href="/">PHP</a></li>
-            <li><a href="/">Java</a></li>
-            <li><a href="/">Android</a></li>
-            <li><a href="/">Templates</a></li>
+            <li><a href="/">Django</a></li>
+            <li><a href="/">React JS</a></li>
+            <li><a href="/">JavaScript</a></li>
+            <li><a href="/">Python</a></li>
+            <li><a href="/">HTML</a></li>
+            <li><a href="/">CSS</a></li>
           </ul>
         </div>
-  
+
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/services">Services</a></li>
+            <li><a target="_blank" rel="noreferrer noopener" href="https://jashezan.github.io/">Portfolio</a></li>
+            <li><a target="_blank" rel="noreferrer noopener" href="https://jashezan.github.io/">Contact</a></li>
+            <li><a target="_blank" rel="noreferrer noopener" href="https://jashezan.github.io/">Services</a></li>
           </ul>
         </div>
       </div>
@@ -256,17 +289,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-       <a href="#">Scanfcode</a>.
+          <p class="copyright-text">Copyright &copy; 2019-2022 J.A. Shezan
           </p>
         </div>
-  
+
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
-            <li><a class="facebook" href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="https://dribble.com"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="https://linkedin.com"><i class="fa fa-linkedin"></i></a></li>   
+            <li><a target="_blank" rel="noreferrer noopener" class="github" href="https://github.com/jashezan"><i
+                  class="fab fa-github"></i></a></li>
+            <li><a target="_blank" rel="noreferrer noopener" class="twitter" href="https://twitter.com/jashezan"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li><a target="_blank" rel="noreferrer noopener" class="hashnode" href="https://jashezan.hashnode.dev"><i
+                  class="fab fa-hashnode"></i></a></li>
+            <li><a target="_blank" rel="noreferrer noopener" class="linkedin"
+                href="https://www.linkedin.com/in/m-m-jubyer-ahmed-shezan-0374421ba/"><i
+                  class="fab fa-linkedin"></i></a></li>
           </ul>
         </div>
       </div>

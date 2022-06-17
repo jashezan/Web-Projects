@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+
+.page{
+  min-height: 100vh;
+}
+
+.foot{
+  position: relative;
+  bottom: 0;
+  min-height: 10vh;
+  background-color: rgb(33,37,41);
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.value{
+  border: 2px solid black;
+  display: inline-block;
+  margin: 3.3rem auto;
+  padding: 2rem 5rem;
+}
+
+.flx{
+  display: flex;
+  justify-content: space-between;
+}
+
+.half{
+  width: 50%;
+}
+
+main{
+  min-height: 100vh;
+}

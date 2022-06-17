@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat&family=Lato&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
+.heading{
+  margin: 1rem;
+}
+
+.quote__box{
+  width: 80%;
+  min-height: 10vh;
+  height: 30vh;
+  border: 1px solid #ddd;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #ddd;
+  padding: 2rem;
+  position: relative;
+}
+
+.tweet__btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  background-color: #eee;
+  color: #00acee;
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 1rem;
+}
+
+.quote__text{
+  font-family: 'Delius Swash Caps', cursive, sans-serif;
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quote__author{
+  min-height: 10%;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem 1.6rem 2rem auto;
+}
+
+.quote__button{
+  background-color: orangered;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}

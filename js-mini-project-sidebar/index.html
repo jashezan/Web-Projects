@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fav icon -->
+    <link rel="icon" href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/32/NavCoin-NAV-icon.png">
+
+    <!-- Font Awesome 6.0.0 -->
+    <!-- Use (fab -> Brands), (fas -> Solid) to use FA-6.0.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- CSS Link -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        :root{
+            /* --bg-color: #404eed; */
+            --bg-color: rebeccapurple;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .ham-btn {
+            font-size: 1.6rem;
+            padding: 0 0.8rem;
+            border: none;
+            background-color: var(--bg-color);
+            color: #fff;
+            font-weight: 100;
+            border-radius: 7px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            transition: all 0.5s ease-in-out;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        .ham-btn-show{
+            background: #fff;
+            color: var(--bg-color);
+            font-weight: 100;
+        }
+
+        nav{
+            background-color: var(--bg-color);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            min-width: 200px;
+            width: 20%;
+            transform: translateX(-100%);
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .show-nav{
+            transform: translateX(0);
+        }
+
+        .menu__list {
+            margin: 3rem auto;
+            margin-top: 15em;
+            text-align: center;
+        }
+        
+        .menu__item {
+            margin: 2rem auto;
+        }
+
+        .menu__links {
+            color: white;
+        }
+
+        .menu__item:hover {
+            margin: 2rem;
+            color: #999;
+            border-left: 5px solid #fff;
+            border-right: 5px solid #fff;
+        }
+    </style>
+
+    <title>Nav Bar</title>
+</head>
+
+<body>
+    <button id="ham-btn" class="ham-btn">≡</button>
+    <nav>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__links" href="https://google.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-google"></i>&nbsp;&nbsp;Google</a></li>
+            <li class="menu__item"><a class="menu__links" href="https://facebook.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
+            <li class="menu__item"><a class="menu__links" href="https://twitter.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
+            <li class="menu__item"><a class="menu__links" href="https://discord.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-discord"></i>&nbsp;&nbsp;Discord</a></li>
+            <li class="menu__item"><a class="menu__links" href="https://youtube.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        let btn = document.querySelector("#ham-btn");
+        let nav = document.querySelector("nav");
+        btn.addEventListener("click", ()=>{
+            btn.classList.toggle("ham-btn-show");
+            nav.classList.toggle("show-nav");
+        })
+    </script>
+</body>
+
+</html>

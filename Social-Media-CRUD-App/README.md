@@ -3,4 +3,4 @@ The application will allow you to add post on your computer, read, update them o
 
 <br><br>
 
-My Site: https://jashezan.github.io/Social-Media-CRUD-App-Basic/
+My Site: https://jashezan.github.io/Web-Projects/Social-Media-CRUD-App-Basic/

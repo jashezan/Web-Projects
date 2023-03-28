@@ -9578,7 +9578,7 @@ h2 {
   min-height: 100%;
   transform: translateX(-50%) translateY(-50%);
   z-index: -100;
-  background-image: url("https://raw.githubusercontent.com/jashezan/jashezan.github.io/main/img/main-bg.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/jashezan/Web-Projects@main/jashezan-html-css-old-portfolio/img/main-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
